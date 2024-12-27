@@ -4,8 +4,6 @@ import Footer from "./components/shared/Footer";
 import PopupForm from "./components/shared/PopupForm";
 import { Toaster } from "./components/ui/toaster";
 import ScrollToTop from "./components/custom/ScrollToTop";
-import Login from "./components/shared/Login"; // Import Login component
-import AdminDashboard from "./components/shared/AdminDashboard"; // Import AdminDashboard component
 
 function App() {
   const location = useLocation();
