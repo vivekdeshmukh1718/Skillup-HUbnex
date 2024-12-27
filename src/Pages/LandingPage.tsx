@@ -39,11 +39,11 @@ const LandingPage = () => {
     setPopupVisible(isOpen);
   }, []);
 
-  const handleClose = () => {
-    setPopupVisible(true);
-    //All the things
-    localStorage.setItem("popupClosed", "true");
-  };
+  //const handleClose = () => {
+  //  setPopupVisible(true);
+  //All the things
+  // localStorage.setItem("popupClosed", "true");
+  //};
 
   return (
     <div className="w-full relative">
