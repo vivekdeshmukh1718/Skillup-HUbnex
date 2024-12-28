@@ -24,6 +24,7 @@ import { db } from "../../../firebase-config"; // Import Firestore
 import { collection, addDoc } from "firebase/firestore"; // Firestore functions
 import { Loader } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for redirect
 
 const formSchema = z.object({
   username: z
@@ -55,6 +56,7 @@ const formSchema = z.object({
 const SkillUpForm = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const { toast } = useToast();
+  const navigate = useNavigate(); // Initialize navigate function
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -78,6 +80,9 @@ const SkillUpForm = () => {
         title: "Form Submitted",
         description: "Your form has been successfully submitted!",
       });
+
+      // Redirect to the AdminDashboard after form submission
+      navigate("/admin-dashboard");
     } catch (err) {
       console.error(err);
       toast({
