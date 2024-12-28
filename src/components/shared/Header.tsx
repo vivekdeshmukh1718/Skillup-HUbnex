@@ -57,7 +57,7 @@ const Header = () => {
               Skillup
             </h1>
             <p className="font-base text-xs text-green-primary tracking-wide">
-              An initiative By Hubnex Labs
+              An initiative By Hubnex Labs  @ Vivek Deshmukh
             </p>
           </Link>
           <div className="w-full h-full hidden lg:flex items-center justify-end gap-6 px-4 text-base">

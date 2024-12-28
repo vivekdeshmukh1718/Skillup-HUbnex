@@ -8,10 +8,13 @@ const Certification = () => {
   return (
     <div className="w-[95%] mt-16  lg:mt-32 mx-auto flex items-start lg:items-center justify-center flex-col-reverse lg:flex-row">
       <div className="w-full  py-10 px-4">
-        <Batch classname="bg-blue-primary my-4 p-2  px-4 rounded-full hidden lg:flex items-center justify-around gap-2 w-max">
-          <img src="/social/linkedin.svg" alt="linkedin" className="" />
-          <p className="text-white tracking-wide">Shareable in Linkedin</p>
-        </Batch>
+      <Batch classname="bg-blue-primary my-4 p-2 px-4 rounded-full hidden lg:flex items-center justify-around gap-2 w-max">
+          <a href="https://www.linkedin.com/in/vivekdeshmukh1718" target="_blank" rel="noopener noreferrer">
+              <img src="/social/linkedin.svg" alt="linkedin" />
+                <p className="text-white tracking-wide">Shareable in Linkedin</p>
+           </a>
+      </Batch>
+
         <h1 className=" text-2xl lg:text-5xl font-bold text-center lg:text-left ">
           Get <i className="text-green-primary">Certified</i> With Every
           Completion
